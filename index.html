@@ -1,34 +1,193 @@
-<!-- add all items from grading group 1 and 2. Search for items in group 5 that refer to css f.e. author attribute value-->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Student name – update in student.txt">
-    <meta name="description" content="Explore late-night food categories in Amsterdam, including fast food, pizza, Asian food and affordable meals after 22:00.">
-    <meta name="keywords" content="Amsterdam, late-night, food, takeaway, affordable">
+    <meta name="author" content="Fuad Abdi Mumed">
+    <meta name="description"
+        content="Find great food after 22:00 in Amsterdam. Discover fast food, pizza, Asian food and affordable restaurants by neighbourhood.">
+    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Late-Night Food Amsterdam</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-    <header class="site-header"><a class="brand" href="index.html" aria-label="Late-Night Food Amsterdam home"><span class="brand-icon" aria-hidden="true">●</span> Late-Night Food Amsterdam</a>
-        <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html" aria-current="page">Home</a></li>
-<li><a href="fastfood.html" >Fast Food</a></li>
-<li><a href="pizza.html" >Pizza</a></li>
-<li><a href="asianfood.html" >Asian Food</a></li>
-<li><a href="affordable.html" >Affordable Food</a></li>
-<li><a href="contact.html" >Contact</a></li></ul></nav>
+    <header class="site-header">
+        <section class="header-inner"><a class="brand" href="index.html"><src="img/logo.png"
+                    alt="Late-Night Food Amsterdam pin logo" title="Late-Night Food Amsterdam" width="54"
+                    height="60"><span>Late-Night Food<small>AMSTERDAM</small></span></a><input type="checkbox"
+                id="menu-toggle" class="menu-toggle" aria-label="Toggle menu"><label for="menu-toggle"
+                class="menu-label">☰</label>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="fastfood.html">Fast Food</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="asianfood.html">Asian Food</a></li>
+                    <li><a href="affordable.html">Affordable Food</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <main id="main-content"><section class="hero"><p class="eyebrow">AMSTERDAM · AFTER 22:00</p><h1>Find food after 22:00</h1><p>Late-Night Food Amsterdam helps night-shift workers explore food options after a long shift.</p></section><section class="categories" aria-labelledby="categories-title"><h2 id="categories-title">Explore food categories</h2><div class="card-grid"><article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Fast Food photograph">Add your own food photo</div><figcaption>Fast Food</figcaption></figure><p>Quick bites after work</p><a class="button" href="fastfood.html">Explore Fast Food</a></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Pizza photograph">Add your own food photo</div><figcaption>Pizza</figcaption></figure><p>Explore late-night pizza</p><a class="button" href="pizza.html">Explore Pizza</a></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Asian Food photograph">Add your own food photo</div><figcaption>Asian Food</figcaption></figure><p>Discover Asian dishes</p><a class="button" href="asianfood.html">Explore Asian Food</a></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Affordable Food photograph">Add your own food photo</div><figcaption>Affordable Food</figcaption></figure><p>Find budget-friendly options</p><a class="button" href="affordable.html">Explore Affordable Food</a></article></div></section><section class="info-section" aria-labelledby="why-title"><h2 id="why-title">Why choose us?</h2><p>Browse food categories in one place and check restaurant information before travelling.</p></section><aside class="info-section"><h2>About us</h2><p>This student website is designed for people looking for food after 22:00 in Amsterdam.</p></aside></main>
-    <footer class="site-footer"><p>&copy; 2026 Late-Night Food Amsterdam. Student project.</p><p><a href="contact.html">Contact us</a> <a href="index.html">Back to home</a></p></footer>
-    <aside class="cookie-banner" aria-label="Website notice"><p>This is a student demonstration website. Restaurant details must be verified before publication.</p></aside>
+    <main>
+   
+<section class="home-hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="media/amsterdam-night.mp4" type="video/mp4">
+    </video>
+
+    <section class="hero-content">
+        <h1>Find Great Food <em>After 22:00</em> in Amsterdam</h1>
+        <p>Discover restaurants and takeaway options for night-shift workers, students and night owls.</p>
+
+        <form class="hero-search" action="index.html" method="get" role="search">
+            <label class="sr-only" for="food-search">Search food or location</label>
+            <input id="food-search" name="search" type="search"
+                   placeholder="Search food or location...">
+            <button type="submit" aria-label="Search food">⌕</button>
+        </form>
+    </section>
+
+        </section>
+        <section class="home-section" id="categories">
+            <h2>What would you like to eat?</h2>
+            <section class="category-row" aria-label="Food categories"><a class="category" href="fastfood.html">
+                    <figure><img src="img/cat-fast.png" alt="Fast Food" title="Fast Food" loading="lazy">
+                        <figcaption>Fast Food</figcaption>
+                    </figure>
+                </a><a class="category" href="pizza.html">
+                    <figure><img src="img/cat-pizza.png" alt="Pizza" title="Pizza" loading="lazy">
+                        <figcaption>pizza</figcaption>
+                    </figure>
+                </a><a class="category" href="asianfood.html">
+                    <figure><img src="img/cat-asian.png" alt="Asian Food" title="Asian Food" loading="lazy">
+                        <figcaption>Asian Food</figcaption>
+                    </figure>
+                </a><a class="category" href="affordable.html">
+                    <figure><img src="img/cat-affordable.jpg" alt="Affordable Food" title="Affordable Food" loading="lazy">
+                        <figcaption>Affordable food</figcaption>
+                    </figure>
+                </a><a class="category" href="#popular">
+                    <figure><img src="img/cat-all.png" alt="All Categories">
+                        <figcaption>All Categories</figcaption>
+                    </figure>
+                </a></section>
+        </section>
+        <section class="home-section" id="popular">
+            <h2>Popular Late-Night Spots</h2>
+            <section class="popular-grid">
+                <article class="popular-card"><a href="fastfood.html">
+                        <figure><img src="img/spot-burger.jpg" alt="Burger">
+                            <figcaption><strong>Mr Burger</strong><small>Centrum, Amsterdam</small><small>Open late —
+                                    check current hours</small></figcaption>
+                        </figure>
+                    </a><span class="heart-icon" aria-hidden="true">♡</span></article>
+                <article class="popular-card"><a href="pizza.html">
+                        <figure><img src="img/spot-pizza.jpg" alt="Pizza" title="Pizza" loading="lazy">
+                            <figcaption><strong>New York Pizza</strong><small>Damstraat, Amsterdam
+                                    Centrum</small><small>Open late — check current hours</small></figcaption>
+                        </figure>
+                    </a><span class="heart-icon" aria-hidden="true">♡</span></article>
+                <article class="popular-card"><a href="asianfood.html">
+                        <figure><img src="img/spot-ramen.jpg" alt="Asian Food" title="Asian Food" loading="lazy">
+                            <figcaption><strong>Miko Ramen</strong><small>Amsterdam Centrum</small><small>Open late —
+                                    check current hours</small></figcaption>
+                        </figure>
+                    </a><span class="heart-icon" aria-hidden="true">♡</span></article>
+                <article class="popular-card"><a href="fastfood.html">
+                        <figure><img src="img/spot-febo.jpg" alt="FEBO Food" title="FEBO Food" loading="lazy">
+                            <figcaption><strong>FEBO</strong><small>Amsterdam</small><small>Open late — check current
+                                    hours</small></figcaption>
+                        </figure>
+                    </a><span class="heart-icon" aria-hidden="true">♡</span></article>
+            </section>
+        </section>
+        <section class="home-section areas-section">
+            <h2>Explore Amsterdam by neighbourhood</h2>
+            <section class="areas-row"><a class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
+    <source src="media/amsterdam-center.mp4" type="video/mp4">
+</video><strong>Centraal</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
+    <source src="media/amsterdam-depijp.mp4" type="video/mp4">
+</video><strong>De Pijp</strong></a><a class="area-card"
+                    href="fastfood.html"><video autoplay muted loop playsinline>
+    <source src="media/amsterdam-west.mp4" type="video/mp4">
+</video><strong>West</strong></a><a
+                    class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
+    <source src="media/amsterdam-oost.mp4" type="video/mp4">
+</video><strong>Oost</strong></a><a
+                    class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
+    <source src="media/amsterdam-noord.mp4" type="video/mp4">
+</video>
+<strong>Noord</strong></a></section>
+        </section>
+        <section class="home-section about-home" id="about">
+            <h2>About Us</h2>
+            <section class="about-row">
+                <figure><img src="img/chef.jpg" alt="Chef preparing a meal" title="Chef preparing a meal" class=""
+                        loading="lazy"></figure>
+                <article>
+                    <p>Amsterdam is a city that never truly sleeps. Even after 22:00, people are still working,
+                        studying, travelling and enjoying the nightlife. Finding a good place to eat late at night can
+                        sometimes be difficult.</p>
+                    <p>Late-Night Food Amsterdam helps night-shift workers, students, tourists and local residents
+                        discover restaurants and takeaway options serving food late in the evening.</p>
+                    <p>Whether you are craving a burger, freshly baked pizza, Asian food or a budget-friendly snack,
+                        explore our food categories and find something that matches your preferences.</p>
+                    <p>Explore neighbourhoods including Centrum, De Pijp, West, Oost and Noord, with restaurant
+                        locations and directions to help you plan your visit.</p><a class="btn-orange"
+                        href="contact.html">Learn More</a>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <section class="footer-inner">
+            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logo.svg" alt="Food pin logo"
+                        title="Late-Night Food" width="54" height="60"><span>Late-Night
+                        Food<small>AMSTERDAM</small></span></a>
+                <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
+                    affordable meals after 22:00.</p>
+            </section>
+            <section>
+                <h2>Quick Links</h2>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fastfood.html">Fast Food</a></li>
+                        <li><a href="pizza.html">Pizza</a></li>
+                        <li><a href="asianfood.html">Asian Food</a></li>
+                        <li><a href="affordable.html">Affordable Food</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Information</h2>
+                <p><a href="index.html#about">About Us</a></p>
+            </section>
+            <section>
+                <h2>Follow Us</h2>
+                <p class="socials">📷 🌐 ▶ ♪</p>
+                <p>Stay connected with us for the latest late-night food spots, updates and recommendations in
+                    Amsterdam.</p>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
+            <p>Good food, even late at night! <span class="heart">♡</span></p>
+        </section>
+    </footer>
+    <aside class="cookie-note"><input type="checkbox" id="cookie-dismiss">
+        <p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
+    </aside>
 </body>
+
 </html>

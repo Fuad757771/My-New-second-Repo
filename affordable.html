@@ -1,49 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="author" content="Fuad Abdi Mumed">
-	<meta name="description" content="Explore affordable food ideas for late-night food in Amsterdam, with example meals and useful reminders for night-shift workers and students.">
-	<meta name="keywords" content="Amsterdam, late-night, food, affordable, restaurants">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Affordable Food | Late-Night Food Amsterdam</title>
-	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&amp;display=swap" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="author" content="Fuad Abdi Mumed">
+    <meta name="description"
+        content="Explore affordable food spots in Amsterdam after 22:00, with restaurant information, neighbourhoods, directions and useful tips.">
+    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordable Food | Late-Night Food Amsterdam</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-	<header class="site-header">
-		<a class="brand" href="index.html" aria-label="Late-Night Food Amsterdam home"><span class="brand-mark" aria-hidden="true">&#9679;</span><span>Late-Night Food <small>AMSTERDAM</small></span></a>
-		<nav aria-label="Main navigation">
-			<ul class="nav-list">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="fast-food.html">Fast Food</a></li>
-				<li><a href="pizza.html">Pizza</a></li>
-				<li><a href="asian-food.html">Asian Food</a></li>
-				<li><a href="affordable.html" aria-current="page">Affordable Food</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main id="main-content">
-		<section class="page-intro"><p class="eyebrow">LATE-NIGHT FOOD GUIDE</p><h1>Affordable Food</h1><p>Budget-friendly options to explore. Browse these example food choices.</p></section>
-		<section class="content-section"><h2>Affordable Food options</h2><section class="card-grid" aria-label="Affordable Food options">
-			<article class="food-card"><figure><span class="food-visual visual-1" role="img" aria-label="Illustration placeholder for Kebab Wrap">&#9679;</span><figcaption>Replace with your own photograph: Kebab Wrap</figcaption></figure><h3>Kebab Wrap</h3><p>Explore this option and check current availability before you visit.</p><span class="card-note">Example food option</span></article>
-			<article class="food-card"><figure><span class="food-visual visual-2" role="img" aria-label="Illustration placeholder for Falafel Wrap">&#9679;</span><figcaption>Replace with your own photograph: Falafel Wrap</figcaption></figure><h3>Falafel Wrap</h3><p>Explore this option and check current availability before you visit.</p><span class="card-note">Example food option</span></article>
-			<article class="food-card"><figure><span class="food-visual visual-3" role="img" aria-label="Illustration placeholder for Chicken Shawarma">&#9679;</span><figcaption>Replace with your own photograph: Chicken Shawarma</figcaption></figure><h3>Chicken Shawarma</h3><p>Explore this option and check current availability before you visit.</p><span class="card-note">Example food option</span></article>
-			<article class="food-card"><figure><span class="food-visual visual-4" role="img" aria-label="Illustration placeholder for Cheese Toastie">&#9679;</span><figcaption>Replace with your own photograph: Cheese Toastie</figcaption></figure><h3>Cheese Toastie</h3><p>Explore this option and check current availability before you visit.</p><span class="card-note">Example food option</span></article>
-		</section></section>
-		<section class="content-section"><h2>Quick comparison</h2><p>This table compares the example options shown above; it does not claim current restaurant availability.</p><table><caption>Food options in this category</caption><thead><tr><th scope="col">Option</th><th scope="col">Type</th></tr></thead><tbody><tr><th scope="row">Kebab Wrap</th><td>Affordable Food</td></tr><tr><th scope="row">Falafel Wrap</th><td>Affordable Food</td></tr><tr><th scope="row">Chicken Shawarma</th><td>Affordable Food</td></tr><tr><th scope="row">Cheese Toastie</th><td>Affordable Food</td></tr></tbody></table></section>
-		<aside class="content-section"><h2>Plan your visit</h2><p><em>Tip:</em> Verify the restaurant's address, price and opening hours before travelling.</p></aside>
-	</main>
-	<footer class="site-footer">
-		<section><h2>Late-Night Food Amsterdam</h2><p>Explore food choices for evenings and night shifts.</p></section>
-		<section><h2>Quick links</h2><nav aria-label="Footer navigation"><ul><li><a href="index.html">Home</a></li><li><a href="contact.html">Contact</a></li></ul></nav></section>
-		<section><h2>About this project</h2><p>A student website concept. Check opening times and prices directly with businesses before visiting.</p></section>
-		<p class="copyright">&copy; 2026 Late-Night Food Amsterdam. Student project. All rights reserved.</p>
-	</footer>
-	<aside class="cookie-note" aria-label="Site information"><p>This demonstration website does not use tracking cookies.</p></aside>
+    <header class="site-header">
+        <section class="header-inner"><a class="brand" href="index.html"><img src="img/logo.svg"
+                    alt="Late-Night Food Amsterdam pin logo" title="Late-Night Food Amsterdam" width="54"
+                    height="60"><span>Late-Night Food<small>AMSTERDAM</small></span></a><input type="checkbox"
+                id="menu-toggle" class="menu-toggle" aria-label="Toggle menu"><label for="menu-toggle"
+                class="menu-label">☰</label>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fastfood.html">Fast Food</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="asianfood.html">Asian Food</a></li>
+                    <li><a href="affordable.html" aria-current="page">Affordable Food</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="detail-main">
+        <section class="detail-top">
+            <section class="detail-heading">
+                <p class="section-kicker">AFFORDABLE FOOD</p>
+                <h1>Affordable Food Spots</h1>
+                <p>Discover budget-friendly late-night meals and takeaway restaurants in Amsterdam.</p>
+                <nav class="filter-chips" aria-label="Food types"><a href="#restaurants">All</a><a
+                        href="#restaurants">Snacks</a><a href="#restaurants">Döner</a><a href="#restaurants">Kebab</a><a
+                        href="#restaurants">Sandwich</a><a href="#restaurants">Fries</a></nav>
+            </section>
+            <figure class="detail-banner">{img(c["hero"],title+" food hero")}</figure>
+        </section>
+        <section class="detail-columns">
+            <section class="restaurant-list" id="restaurants">
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-1.jpg" alt="Dönerland Eethuis food" title="Dönerland Eethuis food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Dönerland Eethuis</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Dönerland Eethuis"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=D%C3%B6nerland%20Eethuis%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=D%C3%B6nerland%20Eethuis%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-2.jpg" alt="Snackbar Ten Have food" title="Snackbar Ten Have food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Snackbar Ten Have</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Snackbar Ten Have"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Snackbar%20Ten%20Have%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Snackbar%20Ten%20Have%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-3.jpg" alt="Eethuis Sinbad food" title="Eethuis Sinbad food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Eethuis Sinbad</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Eethuis Sinbad"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Eethuis%20Sinbad%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Eethuis%20Sinbad%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-4.jpg" alt="Best Döner &amp; Snacks food"
+                            title="Best Döner &amp; Snacks food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Best Döner &amp; Snacks</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Best Döner &amp; Snacks"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Best%20D%C3%B6ner%20%26%20Snacks%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Best%20D%C3%B6ner%20%26%20Snacks%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-5.jpg" alt="Meneer Kebab food" title="Meneer Kebab food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Meneer Kebab</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Meneer Kebab"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Meneer%20Kebab%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Meneer%20Kebab%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-6.jpg" alt="BurgerFries food" title="BurgerFries food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>BurgerFries</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for BurgerFries"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=BurgerFries%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=BurgerFries%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-1.jpg" alt="Grill Danny food" title="Grill Danny food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Grill Danny</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Grill Danny"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Grill%20Danny%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Grill%20Danny%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-2.jpg" alt="Turkish Kebab Istanbul food"
+                            title="Turkish Kebab Istanbul food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Turkish Kebab Istanbul</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Turkish Kebab Istanbul"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Turkish%20Kebab%20Istanbul%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Turkish%20Kebab%20Istanbul%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-3.jpg" alt="Moaz Falafel food" title="Moaz Falafel food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Moaz Falafel</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Moaz Falafel"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Moaz%20Falafel%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Moaz%20Falafel%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-4.jpg" alt="Favorite Chicken &amp; Ribs food"
+                            title="Favorite Chicken &amp; Ribs food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Favorite Chicken &amp; Ribs</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Favorite Chicken &amp; Ribs"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Favorite%20Chicken%20%26%20Ribs%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Favorite%20Chicken%20%26%20Ribs%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/affordable-5.jpg" alt="Rembrandt Snack Bar food"
+                            title="Rembrandt Snack Bar food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Rembrandt Snack Bar</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Rembrandt Snack Bar"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Rembrandt%20Snack%20Bar%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Rembrandt%20Snack%20Bar%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+            </section>
+            <aside class="detail-sidebar">
+                <section class="why-block">
+                    <h2>Why Choose Affordable Food?</h2>
+                    <p>Enjoy delicious meals, snacks and takeaway across Amsterdam without spending too much. Perfect
+                        for students, night-shift workers and anyone looking for a quick meal after 22:00.</p>
+                    <section class="feature-icons">
+                        <article><span aria-hidden="true">♨</span><strong>Open late</strong></article>
+                        <article><span aria-hidden="true">♙</span><strong>Popular areas</strong></article>
+                        <article><span aria-hidden="true">▣</span><strong>Budget friendly</strong></article>
+                        <article><span aria-hidden="true">⚒</span><strong>Many options</strong></article>
+                    </section>
+                </section>
+                <section class="neighbourhood-block">
+                    <h2>Find Affordable Food by Neighbourhood</h2>
+                    <p>Explore options in popular areas of Amsterdam</p>
+                    <section class="neighbourhood-grid"><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Affordable%20Food%20Centrum%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Centrum</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Affordable%20Food%20De%20Pijp%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> De Pijp</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Affordable%20Food%20West%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> West</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Affordable%20Food%20Oost%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Oost</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Affordable%20Food%20Noord%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Noord</a></section>
+                </section>
+                <section class="tips-panel">
+                    <h2>Tips for Late-Night Affordable Food</h2>
+                    <ul>
+                        <li>Check opening times before you go</li>
+                        <li>Look for restaurants close to you</li>
+                        <li>Explore different neighbourhoods</li>
+                        <li>Check the restaurant website for updates</li>
+                    </ul>
+                </section>
+                <section class="map-block">
+                    <h3>Affordable Food locations on the Map</h3>
+                    <p>See all affordable food locations in Amsterdam</p><iframe title="Map of Amsterdam restaurants"
+                        loading="lazy"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=4.835%2C52.335%2C4.975%2C52.405&amp;layer=mapnik"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><a class="map-link" href="https://www.openstreetmap.org/#map=12/52.370/4.900" target="_blank"
+                            rel="noopener noreferrer">Open larger map ↗</a></p>
+                </section>
+            </aside>
+        </section>
+        <section class="faq-block">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Where can I find food after 22:00 in Amsterdam?</summary>
+                <p>Explore the restaurant cards and check each location before visiting.</p>
+            </details>
+            <details>
+                <summary>How can I check restaurant opening hours?</summary>
+                <p>Use the website link or Google Maps for the latest published hours.</p>
+            </details>
+            <details>
+                <summary>How do I get directions to a restaurant?</summary>
+                <p>Select the orange Directions button beside a restaurant.</p>
+            </details>
+            <details>
+                <summary>Are all the listed restaurants open after 22:00?</summary>
+                <p>Opening hours can change, so always verify before travelling.</p>
+            </details>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <section class="footer-inner">
+            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logo.svg" alt="Food pin logo"
+                        title="Late-Night Food" width="54" height="60"><span>Late-Night
+                        Food<small>AMSTERDAM</small></span></a>
+                <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
+                    affordable meals after 22:00.</p>
+            </section>
+            <section>
+                <h2>Quick Links</h2>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fastfood.html">Fast Food</a></li>
+                        <li><a href="pizza.html">Pizza</a></li>
+                        <li><a href="asianfood.html">Asian Food</a></li>
+                        <li><a href="affordable.html">Affordable Food</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Information</h2>
+                <p><a href="index.html#about">About Us</a></p>
+            </section>
+            <section>
+                <h2>Follow Us</h2>
+                <p class="socials">📷 🌐 ▶ ♪</p>
+                <p>Stay connected with us for the latest late-night food spots, updates and recommendations in
+                    Amsterdam.</p>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
+            <p>Good food, even late at night! <span class="heart">♡</span></p>
+        </section>
+    </footer>
+    <aside class="cookie-note"><input type="checkbox" id="cookie-dismiss">
+        <p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
+    </aside>
 </body>
+
 </html>

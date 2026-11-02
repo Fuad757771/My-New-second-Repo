@@ -1,5 +1,5 @@
-Student name: your name 
-Student number: your student number
-Student class: your class
-GitHub Repository: your github repository URL
-GitHub Pages URL: fuad757771.github.io/My-New-second-Repo/
+Student name: Fuad Abdi Mumed
+Student number: 757771
+Student class: IT1C
+GitHub Repository: https://github.com/Fuad757771/My-New-second-Repo
+GitHub Pages URL: https://fuad757771.github.io/My-New-second-Repo/

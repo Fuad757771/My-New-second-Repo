@@ -1,31 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Student name – update in student.txt">
-    <meta name="description" content="Explore late-night food categories in Amsterdam, including fast food, pizza, Asian food and affordable meals after 22:00.">
-    <meta name="keywords" content="Amsterdam, late-night, food, takeaway, affordable">
+    <meta name="author" content="Fuad Abdi Mumed">
+    <meta name="description"
+        content="Explore fast food spots in Amsterdam after 22:00, with restaurant information, neighbourhoods, directions and useful tips.">
+    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Food | Late-Night Food Amsterdam</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-    <header class="site-header"><a class="brand" href="index.html" aria-label="Late-Night Food Amsterdam home"><span class="brand-icon" aria-hidden="true">●</span> Late-Night Food Amsterdam</a>
-        <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html" >Home</a></li>
-<li><a href="fastfood.html" aria-current="page">Fast Food</a></li>
-<li><a href="pizza.html" >Pizza</a></li>
-<li><a href="asianfood.html" >Asian Food</a></li>
-<li><a href="affordable.html" >Affordable Food</a></li>
-<li><a href="contact.html" >Contact</a></li></ul></nav>
+    <header class="site-header">
+        <section class="header-inner"><a class="brand" href="index.html"><img src="img/logo.svg"
+                    alt="Late-Night Food Amsterdam pin logo" title="Late-Night Food Amsterdam" width="54"
+                    height="60"><span>Late-Night Food<small>AMSTERDAM</small></span></a><input type="checkbox"
+                id="menu-toggle" class="menu-toggle" aria-label="Toggle menu"><label for="menu-toggle"
+                class="menu-label">☰</label>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fastfood.html" aria-current="page">Fast Food</a></li>
+                    <li><a href="pizza.html">Pizza</a></li>
+                    <li><a href="asianfood.html">Asian Food</a></li>
+                    <li><a href="affordable.html">Affordable Food</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <main id="main-content"><section class="hero"><p class="eyebrow">AMSTERDAM · AFTER 22:00</p><h1>Fast Food</h1><p>Explore quick meals and takeaway choices for your late-night break.</p></section><section class="categories" aria-labelledby="categories-title"><h2 id="categories-title">Explore fast food</h2><div class="card-grid"><article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Burgers photograph">Add your own food photo</div><figcaption>Burgers</figcaption></figure><p>Add your verified restaurant details here</p><p class="detail-note">Replace this placeholder with your own researched restaurant information.</p></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Wraps photograph">Add your own food photo</div><figcaption>Wraps</figcaption></figure><p>Add your verified restaurant details here</p><p class="detail-note">Replace this placeholder with your own researched restaurant information.</p></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Snacks photograph">Add your own food photo</div><figcaption>Snacks</figcaption></figure><p>Add your verified restaurant details here</p><p class="detail-note">Replace this placeholder with your own researched restaurant information.</p></article></div></section><aside class="info-section"><h2>Before you go</h2><p>Always confirm opening hours, location and prices with the restaurant.</p></aside></main>
-    <footer class="site-footer"><p>&copy; 2026 Late-Night Food Amsterdam. Student project.</p><p><a href="contact.html">Contact us</a> <a href="index.html">Back to home</a></p></footer>
-    <aside class="cookie-banner" aria-label="Website notice"><p>This is a student demonstration website. Restaurant details must be verified before publication.</p></aside>
+    <main class="detail-main">
+        <section class="detail-top">
+            <section class="detail-heading">
+                <p class="section-kicker">FAST FOOD</p>
+                <h1>Find Fast Food in Amsterdam</h1>
+                <p>Discover late-night burgers, fried chicken, fries and quick meals around Amsterdam.</p>
+                <nav class="filter-chips" aria-label="Food types"><a href="#restaurants">All</a><a
+                        href="#restaurants">Kebab</a><a href="#restaurants">Fries</a><a
+                        href="#restaurants">Chicken</a><a href="#restaurants">Snacks</a></nav>
+            </section>
+            <figure class="detail-banner">{img(c["hero"],title+" food hero")}</figure>
+        </section>
+        <section class="detail-columns">
+            <section class="restaurant-list" id="restaurants">
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-1.jpg" alt="Burger King food" title="Burger King food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Burger King</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Burger King"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Burger%20King%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Burger%20King%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-2.jpg" alt="FEBO food" title="FEBO food" class="" loading="lazy">
+                    </figure>
+                    <section class="restaurant-details">
+                        <h2>FEBO</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for FEBO"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=FEBO%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=FEBO%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-3.jpg" alt="KFC food" title="KFC food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>KFC</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for KFC"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=KFC%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=KFC%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-4.jpg" alt="McDonald’s food" title="McDonald’s food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>McDonald’s</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for McDonald’s"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=McDonald%E2%80%99s%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=McDonald%E2%80%99s%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-5.jpg" alt="Taco Bell food" title="Taco Bell food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Taco Bell</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Taco Bell"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Taco%20Bell%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Taco%20Bell%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-6.jpg" alt="Smashy food" title="Smashy food" class="" loading="lazy">
+                    </figure>
+                    <section class="restaurant-details">
+                        <h2>Smashy</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Smashy"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Smashy%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Smashy%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-1.jpg" alt="Smash n’ Chicken food" title="Smash n’ Chicken food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Smash n’ Chicken</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Smash n’ Chicken"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Smash%20n%E2%80%99%20Chicken%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Smash%20n%E2%80%99%20Chicken%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-2.jpg" alt="Dr. Chicken 2 food" title="Dr. Chicken 2 food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Dr. Chicken 2</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Dr. Chicken 2"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Dr.%20Chicken%202%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Dr.%20Chicken%202%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-3.jpg" alt="Smashy food" title="Smashy food" class="" loading="lazy">
+                    </figure>
+                    <section class="restaurant-details">
+                        <h2>Smashy</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Smashy"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Smashy%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Smashy%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-4.jpg" alt="Smash n’ Chicken food" title="Smash n’ Chicken food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Smash n’ Chicken</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Smash n’ Chicken"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Smash%20n%E2%80%99%20Chicken%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Smash%20n%E2%80%99%20Chicken%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/fast-5.jpg" alt="Dr. Chicken Amsterdam food"
+                            title="Dr. Chicken Amsterdam food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Dr. Chicken Amsterdam</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Dr. Chicken Amsterdam"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Dr.%20Chicken%20Amsterdam%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Dr.%20Chicken%20Amsterdam%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+            </section>
+            <aside class="detail-sidebar">
+                <section class="why-block">
+                    <h2>Why Fast Food at Night?</h2>
+                    <p>Fast food is quick, convenient and easy to find after a busy shift or night out.</p>
+                    <section class="feature-icons">
+                        <article><span aria-hidden="true">♨</span><strong>Choose Your Food</strong></article>
+                        <article><span aria-hidden="true">⌖</span><strong>Find a Location</strong></article>
+                        <article><span aria-hidden="true">↗</span><strong>Get Directions</strong></article>
+                    </section>
+                </section>
+                <section class="neighbourhood-block">
+                    <h2>Find Fast Food by Neighbourhood</h2>
+                    <p>Explore options in popular areas of Amsterdam</p>
+                    <section class="neighbourhood-grid"><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Centrum%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Centrum</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20De%20Pijp%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> De Pijp</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20West%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> West</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Oost%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Oost</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Noord%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Noord</a></section>
+                </section>
+                <section class="map-block">
+                    <h3>Fast Food locations on the Map</h3>
+                    <p>See all fast food locations in Amsterdam</p><iframe title="Map of Amsterdam restaurants"
+                        loading="lazy"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=4.835%2C52.335%2C4.975%2C52.405&amp;layer=mapnik"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><a class="map-link" href="https://www.openstreetmap.org/#map=12/52.370/4.900" target="_blank"
+                            rel="noopener noreferrer">Open larger map ↗</a></p>
+                </section>
+            </aside>
+        </section>
+        <section class="faq-block">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Where can I find food after 22:00 in Amsterdam?</summary>
+                <p>Explore the restaurant cards and check each location before visiting.</p>
+            </details>
+            <details>
+                <summary>How can I check restaurant opening hours?</summary>
+                <p>Use the website link or Google Maps for the latest published hours.</p>
+            </details>
+            <details>
+                <summary>How do I get directions to a restaurant?</summary>
+                <p>Select the orange Directions button beside a restaurant.</p>
+            </details>
+            <details>
+                <summary>Are all the listed restaurants open after 22:00?</summary>
+                <p>Opening hours can change, so always verify before travelling.</p>
+            </details>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <section class="footer-inner">
+            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logo.svg" alt="Food pin logo"
+                        title="Late-Night Food" width="54" height="60"><span>Late-Night
+                        Food<small>AMSTERDAM</small></span></a>
+                <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
+                    affordable meals after 22:00.</p>
+            </section>
+            <section>
+                <h2>Quick Links</h2>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fastfood.html">Fast Food</a></li>
+                        <li><a href="pizza.html">Pizza</a></li>
+                        <li><a href="asianfood.html">Asian Food</a></li>
+                        <li><a href="affordable.html">Affordable Food</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Information</h2>
+                <p><a href="index.html#about">About Us</a></p>
+            </section>
+            <section>
+                <h2>Follow Us</h2>
+                <p class="socials">📷 🌐 ▶ ♪</p>
+                <p>Stay connected with us for the latest late-night food spots, updates and recommendations in
+                    Amsterdam.</p>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
+            <p>Good food, even late at night! <span class="heart">♡</span></p>
+        </section>
+    </footer>
+    <aside class="cookie-note"><input type="checkbox" id="cookie-dismiss">
+        <p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
+    </aside>
 </body>
+
 </html>

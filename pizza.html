@@ -1,31 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Student name – update in student.txt">
-    <meta name="description" content="Explore late-night food categories in Amsterdam, including fast food, pizza, Asian food and affordable meals after 22:00.">
-    <meta name="keywords" content="Amsterdam, late-night, food, takeaway, affordable">
+    <meta name="author" content="Fuad Abdi Mumed">
+    <meta name="description"
+        content="Explore pizza spots in Amsterdam after 22:00, with restaurant information, neighbourhoods, directions and useful tips.">
+    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza | Late-Night Food Amsterdam</title>
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
-    <header class="site-header"><a class="brand" href="index.html" aria-label="Late-Night Food Amsterdam home"><span class="brand-icon" aria-hidden="true">●</span> Late-Night Food Amsterdam</a>
-        <nav aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html" >Home</a></li>
-<li><a href="fastfood.html" >Fast Food</a></li>
-<li><a href="pizza.html" aria-current="page">Pizza</a></li>
-<li><a href="asianfood.html" >Asian Food</a></li>
-<li><a href="affordable.html" >Affordable Food</a></li>
-<li><a href="contact.html" >Contact</a></li></ul></nav>
+    <header class="site-header">
+        <section class="header-inner"><a class="brand" href="index.html"><img src="img/logo.svg"
+                    alt="Late-Night Food Amsterdam pin logo" title="Late-Night Food Amsterdam" width="54"
+                    height="60"><span>Late-Night Food<small>AMSTERDAM</small></span></a><input type="checkbox"
+                id="menu-toggle" class="menu-toggle" aria-label="Toggle menu"><label for="menu-toggle"
+                class="menu-label">☰</label>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fastfood.html">Fast Food</a></li>
+                    <li><a href="pizza.html" aria-current="page">Pizza</a></li>
+                    <li><a href="asianfood.html">Asian Food</a></li>
+                    <li><a href="affordable.html">Affordable Food</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-    <main id="main-content"><section class="hero"><p class="eyebrow">AMSTERDAM · AFTER 22:00</p><h1>Pizza</h1><p>Explore pizza options for your evening or night shift.</p></section><section class="categories" aria-labelledby="categories-title"><h2 id="categories-title">Explore pizza</h2><div class="card-grid"><article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Classic pizza photograph">Add your own food photo</div><figcaption>Classic pizza</figcaption></figure><p>Add your verified restaurant details here</p><p class="detail-note">Replace this placeholder with your own researched restaurant information.</p></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Vegetarian pizza photograph">Add your own food photo</div><figcaption>Vegetarian pizza</figcaption></figure><p>Add your verified restaurant details here</p><p class="detail-note">Replace this placeholder with your own researched restaurant information.</p></article>
-<article class="food-card"><figure><div class="image-placeholder" role="img" aria-label="Placeholder for your own Pizza takeaway photograph">Add your own food photo</div><figcaption>Pizza takeaway</figcaption></figure><p>Add your verified restaurant details here</p><p class="detail-note">Replace this placeholder with your own researched restaurant information.</p></article></div></section><aside class="info-section"><h2>Before you go</h2><p>Always confirm opening hours, location and prices with the restaurant.</p></aside></main>
-    <footer class="site-footer"><p>&copy; 2026 Late-Night Food Amsterdam. Student project.</p><p><a href="contact.html">Contact us</a> <a href="index.html">Back to home</a></p></footer>
-    <aside class="cookie-banner" aria-label="Website notice"><p>This is a student demonstration website. Restaurant details must be verified before publication.</p></aside>
+    <main class="detail-main">
+        <section class="detail-top">
+            <section class="detail-heading">
+                <p class="section-kicker">PIZZA</p>
+                <h1>Find PIZZA in Amsterdam</h1>
+                <p>Find freshly baked pizza after 22:00 across Amsterdam.</p>
+                <nav class="filter-chips" aria-label="Food types"><a href="#restaurants">All</a><a
+                        href="#restaurants">Margherita</a><a href="#restaurants">BBQ</a><a
+                        href="#restaurants">Pepperoni</a><a href="#restaurants">Vegan</a></nav>
+            </section>
+            <figure class="detail-banner">{img(c["hero"],title+" food hero")}</figure>
+        </section>
+        <section class="detail-columns">
+            <section class="restaurant-list" id="restaurants">
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-1.jpg" alt="Domino’s Pizza food" title="Domino’s Pizza food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Domino’s Pizza</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Domino’s Pizza"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Domino%E2%80%99s%20Pizza%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Domino%E2%80%99s%20Pizza%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-2.jpg" alt="Pizzadam Amsterdam Centrum food"
+                            title="Pizzadam Amsterdam Centrum food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Pizzadam Amsterdam Centrum</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Pizzadam Amsterdam Centrum"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Pizzadam%20Amsterdam%20Centrum%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Pizzadam%20Amsterdam%20Centrum%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-3.jpg" alt="Telepizza food" title="Telepizza food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Telepizza</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Telepizza"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Telepizza%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Telepizza%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-4.jpg" alt="Pizzeria Bella Roma food" title="Pizzeria Bella Roma food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Pizzeria Bella Roma</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Pizzeria Bella Roma"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Pizzeria%20Bella%20Roma%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Pizzeria%20Bella%20Roma%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-5.jpg" alt="Day and Night Pizza food" title="Day and Night Pizza food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Day and Night Pizza</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Day and Night Pizza"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Day%20and%20Night%20Pizza%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Day%20and%20Night%20Pizza%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-6.jpg" alt="Powerful Pizza food" title="Powerful Pizza food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Powerful Pizza</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Powerful Pizza"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Powerful%20Pizza%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Powerful%20Pizza%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-1.jpg" alt="Bella ciao Amsterdam food" title="Bella ciao Amsterdam food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Bella ciao Amsterdam</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Bella ciao Amsterdam"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Bella%20ciao%20Amsterdam%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Bella%20ciao%20Amsterdam%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-2.jpg" alt="Napoli Pizza Amsterdam food"
+                            title="Napoli Pizza Amsterdam food" class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Napoli Pizza Amsterdam</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Napoli Pizza Amsterdam"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Napoli%20Pizza%20Amsterdam%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Napoli%20Pizza%20Amsterdam%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-3.jpg" alt="Pizza Munchies food" title="Pizza Munchies food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Pizza Munchies</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Pizza Munchies"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Pizza%20Munchies%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Pizza%20Munchies%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-4.jpg" alt="Gusto Italian food" title="Gusto Italian food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Gusto Italian</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Gusto Italian"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Gusto%20Italian%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Gusto%20Italian%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-5.jpg" alt="La Stella food" title="La Stella food" class=""
+                            loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>La Stella</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for La Stella"><a class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=La%20Stella%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=La%20Stella%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+                <article class="restaurant-row">
+                    <figure><img src="img/pizza-6.jpg" alt="Jack and Jones Pizza food" title="Jack and Jones Pizza food"
+                            class="" loading="lazy"></figure>
+                    <section class="restaurant-details">
+                        <h2>Jack and Jones Pizza</h2>
+                        <p>Amsterdam, Netherlands</p>
+                        <p>Opening hours: check before visiting</p>
+                        <nav class="restaurant-buttons" aria-label="Links for Jack and Jones Pizza"><a
+                                class="btn-orange"
+                                href="https://www.google.com/maps/search/?api=1&amp;query=Jack%20and%20Jones%20Pizza%20Amsterdam"
+                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
+                                href="https://www.google.com/search?q=Jack%20and%20Jones%20Pizza%20Amsterdam+restaurant+website"
+                                target="_blank" rel="noopener noreferrer">Website</a></nav>
+                    </section>
+                </article>
+            </section>
+            <aside class="detail-sidebar">
+                <section class="why-block">
+                    <h2>Why Pizza at Night?</h2>
+                    <p>Whether you want a quick slice, a classic Italian pizza or a late-night delivery, Amsterdam has
+                        pizza spots open after 22:00.</p>
+                    <section class="feature-icons">
+                        <article><span aria-hidden="true">◕</span><strong>Freshly baked</strong></article>
+                        <article><span aria-hidden="true">♨</span><strong>Open late</strong></article>
+                        <article><span aria-hidden="true">♧</span><strong>Popular choice</strong></article>
+                    </section>
+                </section>
+                <section class="neighbourhood-block">
+                    <h2>Find Pizza by Neighbourhood</h2>
+                    <p>Explore options in popular areas of Amsterdam</p>
+                    <section class="neighbourhood-grid"><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Pizza%20Centrum%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Centrum</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Pizza%20De%20Pijp%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> De Pijp</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Pizza%20West%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> West</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Pizza%20Oost%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Oost</a><a
+                            href="https://www.google.com/maps/search/?api=1&amp;query=Pizza%20Noord%20Amsterdam"
+                            target="_blank" rel="noopener noreferrer"><span>♧</span> Noord</a></section>
+                </section>
+                <section class="tips-panel">
+                    <h2>Tips for Late-Night Pizza</h2>
+                    <ul>
+                        <li>Check the opening hours before you go</li>
+                        <li>Choose pizza by the neighbourhood</li>
+                        <li>Many places offer takeaway and delivery</li>
+                        <li>Check different pizza options for your taste</li>
+                    </ul>
+                </section>
+                <section class="map-block">
+                    <h3>Pizza locations on the Map</h3>
+                    <p>See all pizza locations in Amsterdam</p><iframe title="Map of Amsterdam restaurants"
+                        loading="lazy"
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=4.835%2C52.335%2C4.975%2C52.405&amp;layer=mapnik"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><a class="map-link" href="https://www.openstreetmap.org/#map=12/52.370/4.900" target="_blank"
+                            rel="noopener noreferrer">Open larger map ↗</a></p>
+                </section>
+            </aside>
+        </section>
+        <section class="faq-block">
+            <h2>Frequently Asked Questions</h2>
+            <details>
+                <summary>Where can I find food after 22:00 in Amsterdam?</summary>
+                <p>Explore the restaurant cards and check each location before visiting.</p>
+            </details>
+            <details>
+                <summary>How can I check restaurant opening hours?</summary>
+                <p>Use the website link or Google Maps for the latest published hours.</p>
+            </details>
+            <details>
+                <summary>How do I get directions to a restaurant?</summary>
+                <p>Select the orange Directions button beside a restaurant.</p>
+            </details>
+            <details>
+                <summary>Are all the listed restaurants open after 22:00?</summary>
+                <p>Opening hours can change, so always verify before travelling.</p>
+            </details>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <section class="footer-inner">
+            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logo.svg" alt="Food pin logo"
+                        title="Late-Night Food" width="54" height="60"><span>Late-Night
+                        Food<small>AMSTERDAM</small></span></a>
+                <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
+                    affordable meals after 22:00.</p>
+            </section>
+            <section>
+                <h2>Quick Links</h2>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="fastfood.html">Fast Food</a></li>
+                        <li><a href="pizza.html">Pizza</a></li>
+                        <li><a href="asianfood.html">Asian Food</a></li>
+                        <li><a href="affordable.html">Affordable Food</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h2>Information</h2>
+                <p><a href="index.html#about">About Us</a></p>
+            </section>
+            <section>
+                <h2>Follow Us</h2>
+                <p class="socials">📷 🌐 ▶ ♪</p>
+                <p>Stay connected with us for the latest late-night food spots, updates and recommendations in
+                    Amsterdam.</p>
+            </section>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
+            <p>Good food, even late at night! <span class="heart">♡</span></p>
+        </section>
+    </footer>
+    <aside class="cookie-note"><input type="checkbox" id="cookie-dismiss">
+        <p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
+    </aside>
 </body>
+
 </html>
