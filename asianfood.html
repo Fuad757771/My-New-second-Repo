@@ -1,447 +1,327 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Fuad Abdi Mumed">
-    <meta name="description"
-        content="Explore Asian food spots in Amsterdam after 22:00, with restaurant information, neighbourhoods, directions and useful tips.">
-    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asian Food | Late-Night Food Amsterdam</title>
-    <link rel="icon" type="image/svg+xml" href="design/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
-        rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta charset="utf-8"/>
+<meta content="Fuad Abdi Mumed" name="author"/>
+<meta content="Explore Asian food spots in Amsterdam after 22:00, with restaurant information, neighbourhoods, directions and useful tips." name="description"/>
+<meta content="Amsterdam, late-night, food, restaurants, neighbourhoods" name="keywords"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Asian Food | Late-Night Food Amsterdam</title>
+<link href="design/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
 </head>
-
 <body>
-    <header class="site-header">
-        <section class="header-inner"><a class="brand" href="index.html"><img src="img/logo.png"
-                    alt="Late-Night Food Amsterdam pin logo" title="Late-Night Food Amsterdam" width="54"
-                    height="60"><span>Late-Night Food<small>AMSTERDAM</small></span></a><input type="checkbox"
-                id="menu-toggle" class="menu-toggle" aria-label="Toggle menu"><label for="menu-toggle"
-                class="menu-label">☰</label>
-            <nav class="main-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="fastfood.html">Fast Food</a></li>
-                    <li><a href="pizza.html">Pizza</a></li>
-                    <li><a href="asianfood.html" aria-current="page">Asian Food</a></li>
-                    <li><a href="affordable.html">Affordable Food</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <main class="detail-main">
-        <section class="detail-top">
-            <section class="detail-heading">
-                <p class="section-kicker">ASIAN FOOD</p>
-                <h1>Asian Food Spots <em>After 22:00</em></h1>
-                <p>Craving delicious Asian food late at night? Explore 10 Asian restaurants in Amsterdam serving everything from flavourful noodles and fried rice to sushi, spicy curries, and tasty street food. Discover their locations, check opening hours, and find the perfect place to satisfy your late-night cravings.</p>
-                <nav class="filter-chips" aria-label="Food types"><a href="#restaurants">All</a><a
-                        href="#restaurants">Japanese</a><a href="#restaurants">Chinese</a><a
-                        href="#restaurants">Thai</a><a href="#restaurants">Indonesian</a><a
-                        href="#restaurants">Korean</a><a href="#restaurants">Vietnamese</a></nav>
-            </section>
-
+<header class="site-header">
+<section class="header-inner"><a class="brand" href="index.html"><img alt="Late-Night Food Amsterdam pin logo" height="60" src="img/logo.png" title="Late-Night Food Amsterdam" width="54"/><span>Late-Night Food<small>AMSTERDAM</small></span></a><input aria-label="Toggle menu" class="menu-toggle" id="menu-toggle" type="checkbox"/><label class="menu-label" for="menu-toggle">☰</label>
+<nav aria-label="Main navigation" class="main-nav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="fastfood.html">Fast Food</a></li>
+<li><a href="pizza.html">Pizza</a></li>
+<li><a aria-current="page" href="asianfood.html">Asian Food</a></li>
+<li><a href="affordable.html">Affordable Food</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</section>
+</header>
+<main class="detail-main">
+<section class="detail-top">
+<section class="detail-heading">
+<p class="section-kicker">ASIAN FOOD</p>
+<h1>Asian Food Spots <em>After 22:00</em></h1>
+<p>Craving delicious Asian food late at night? Explore 10 Asian restaurants in Amsterdam serving everything from flavourful noodles and fried rice to sushi, spicy curries, and tasty street food. Discover their locations, check opening hours, and find the perfect place to satisfy your late-night cravings.</p>
+<nav aria-label="Food types" class="filter-chips"><a href="#restaurants">All</a><a href="#restaurants">Japanese</a><a href="#restaurants">Chinese</a><a href="#restaurants">Thai</a><a href="#restaurants">Indonesian</a><a href="#restaurants">Korean</a><a href="#restaurants">Vietnamese</a></nav>
+</section>
 <figure class="detail-banner">
-    <video autoplay muted loop playsinline>
-        <source src="media/asian-hero.mp4" type="video/mp4">
-    
-    </video>
-    <figcaption class="sr-only">
+<video autoplay="" loop="" muted="" playsinline="">
+<source src="media/asian-hero.mp4" type="video/mp4"/>
+</video>
+<figcaption class="sr-only">
         Asian food cooking in Amsterdam after 22:00
     </figcaption>
 </figure>
-
 </section>
-        <section class="detail-columns">
-            <section class="restaurant-list" id="restaurants">
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-1.jpg" alt="Wok to Walk food" title="Wok to Walk food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Wok to Walk</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Wok to Walk"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Wok%20to%20Walk%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Wok%20to%20Walk%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-2.jpg" alt="WOKIN RESTAURANT food" title="WOKIN RESTAURANT food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>WOKIN RESTAURANT</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for WOKIN RESTAURANT"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=WOKIN%20RESTAURANT%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=WOKIN%20RESTAURANT%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-3.jpg" alt="Taste of Culture food" title="Taste of Culture food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Taste of Culture</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Taste of Culture"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Taste%20of%20Culture%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Taste%20of%20Culture%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-4.jpg" alt="De Japanner food" title="De Japanner food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>De Japanner</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for De Japanner"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=De%20Japanner%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=De%20Japanner%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-5.jpg" alt="A-Fusion Food &amp; Drinks food"
-                            title="A-Fusion Food &amp; Drinks food" loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>A-Fusion Food &amp; Drinks</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for A-Fusion Food &amp; Drinks"><a
-                                class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=A-Fusion%20Food%20%26%20Drinks%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=A-Fusion%20Food%20%26%20Drinks%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-6.jpg" alt="Royal Thai food" title="Royal Thai food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Royal Thai</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Royal Thai"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Thai%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Royal%20Thai%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-7.jpg" alt="Ku Kitchen &amp; Bar food" title="Ku Kitchen &amp; Bar food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Ku Kitchen &amp; Bar</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Ku Kitchen &amp; Bar"><a
-                                class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Ku%20Kitchen%20%26%20Bar%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Ku%20Kitchen%20%26%20Bar%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-8.jpg" alt="Siam Thai Restaurant food" title="Siam Thai Restaurant food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Siam Thai Restaurant</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Siam Thai Restaurant"><a
-                                class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Siam%20Thai%20Restaurant%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Siam%20Thai%20Restaurant%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-9.jpg" alt="Bird Thais Restaurant food"
-                            title="Bird Thais Restaurant food" loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Bird Thais Restaurant</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Bird Thais Restaurant"><a
-                                class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Bird%20Thais%20Restaurant%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Bird%20Thais%20Restaurant%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-10.jpg" alt="Nam Kee Nieuwmarkt food" title="Nam Kee Nieuwmarkt food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Nam Kee Nieuwmarkt</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Nam Kee Nieuwmarkt"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Nam%20Kee%20Nieuwmarkt%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Nam%20Kee%20Nieuwmarkt%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-                <article class="restaurant-row">
-                    <figure><img src="img/asian-11.jpg" alt="Yuan Thai Classic food" title="Yuan Thai Classic food"
-                            loading="lazy"></figure>
-                    <section class="restaurant-details">
-                        <h2>Yuan Thai Classic</h2>
-                        <p>Amsterdam, Netherlands</p>
-                        <p>Opening hours: check before visiting</p>
-                        <nav class="restaurant-buttons" aria-label="Links for Yuan Thai Classic"><a class="btn-orange"
-                                href="https://www.google.com/maps/search/?api=1&amp;query=Yuan%20Thai%20Classic%20Amsterdam"
-                                target="_blank" rel="noopener noreferrer">Directions</a><a class="btn-dark"
-                                href="https://www.google.com/search?q=Yuan%20Thai%20Classic%20Amsterdam+restaurant+website"
-                                target="_blank" rel="noopener noreferrer">Find Website</a></nav>
-                    </section>
-                </article>
-            </section>
-            <aside class="detail-sidebar">
-
-               
+<section class="detail-columns">
+<section class="restaurant-list" id="restaurants"><input checked="" class="mobile-page-radio" id="mobile-page-1" name="mobile-restaurant-page" type="radio"/><input class="mobile-page-radio" id="mobile-page-2" name="mobile-restaurant-page" type="radio"/>
+<article class="restaurant-row">
+<figure><img alt="Wok to Walk food" loading="lazy" src="img/asian-1.jpg" title="Wok to Walk food"/></figure>
+<section class="restaurant-details">
+<h2>Wok to Walk</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Wok to Walk" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Wok%20to%20Walk%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Wok%20to%20Walk%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="WOKIN RESTAURANT food" loading="lazy" src="img/asian-2.jpg" title="WOKIN RESTAURANT food"/></figure>
+<section class="restaurant-details">
+<h2>WOKIN RESTAURANT</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for WOKIN RESTAURANT" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=WOKIN%20RESTAURANT%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=WOKIN%20RESTAURANT%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Taste of Culture food" loading="lazy" src="img/asian-3.jpg" title="Taste of Culture food"/></figure>
+<section class="restaurant-details">
+<h2>Taste of Culture</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Taste of Culture" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Taste%20of%20Culture%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Taste%20of%20Culture%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="De Japanner food" loading="lazy" src="img/asian-4.jpg" title="De Japanner food"/></figure>
+<section class="restaurant-details">
+<h2>De Japanner</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for De Japanner" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=De%20Japanner%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=De%20Japanner%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="A-Fusion Food &amp; Drinks food" loading="lazy" src="img/asian-5.jpg" title="A-Fusion Food &amp; Drinks food"/></figure>
+<section class="restaurant-details">
+<h2>A-Fusion Food &amp; Drinks</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for A-Fusion Food &amp; Drinks" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=A-Fusion%20Food%20%26%20Drinks%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=A-Fusion%20Food%20%26%20Drinks%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Royal Thai food" loading="lazy" src="img/asian-6.jpg" title="Royal Thai food"/></figure>
+<section class="restaurant-details">
+<h2>Royal Thai</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Royal Thai" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Royal%20Thai%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Royal%20Thai%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Ku Kitchen &amp; Bar food" loading="lazy" src="img/asian-7.jpg" title="Ku Kitchen &amp; Bar food"/></figure>
+<section class="restaurant-details">
+<h2>Ku Kitchen &amp; Bar</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Ku Kitchen &amp; Bar" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Ku%20Kitchen%20%26%20Bar%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Ku%20Kitchen%20%26%20Bar%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Siam Thai Restaurant food" loading="lazy" src="img/asian-8.jpg" title="Siam Thai Restaurant food"/></figure>
+<section class="restaurant-details">
+<h2>Siam Thai Restaurant</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Siam Thai Restaurant" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Siam%20Thai%20Restaurant%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Siam%20Thai%20Restaurant%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Bird Thais Restaurant food" loading="lazy" src="img/asian-9.jpg" title="Bird Thais Restaurant food"/></figure>
+<section class="restaurant-details">
+<h2>Bird Thais Restaurant</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Bird Thais Restaurant" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Bird%20Thais%20Restaurant%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Bird%20Thais%20Restaurant%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Nam Kee Nieuwmarkt food" loading="lazy" src="img/asian-10.jpg" title="Nam Kee Nieuwmarkt food"/></figure>
+<section class="restaurant-details">
+<h2>Nam Kee Nieuwmarkt</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Nam Kee Nieuwmarkt" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Nam%20Kee%20Nieuwmarkt%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Nam%20Kee%20Nieuwmarkt%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<article class="restaurant-row">
+<figure><img alt="Yuan Thai Classic food" loading="lazy" src="img/asian-11.jpg" title="Yuan Thai Classic food"/></figure>
+<section class="restaurant-details">
+<h2>Yuan Thai Classic</h2>
+<p>Amsterdam, Netherlands</p>
+<p>Opening hours: check before visiting</p>
+<nav aria-label="Links for Yuan Thai Classic" class="restaurant-buttons"><a class="btn-orange" href="https://www.google.com/maps/search/?api=1&amp;query=Yuan%20Thai%20Classic%20Amsterdam" rel="noopener noreferrer" target="_blank">Directions</a><a class="btn-dark" href="https://www.google.com/search?q=Yuan%20Thai%20Classic%20Amsterdam+restaurant+website" rel="noopener noreferrer" target="_blank">Find Website</a></nav>
+</section>
+</article>
+<section class="mobile-map">
+<h3>Asian Food locations on the Map</h3>
+<p>See Asian food locations in Amsterdam</p><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=4.835%2C52.335%2C4.975%2C52.405&amp;layer=mapnik" title="Map of Amsterdam restaurants"></iframe>
+<p><a class="map-link" href="https://www.openstreetmap.org/#map=12/52.370/4.900" rel="noopener noreferrer" target="_blank">Open larger map ↗</a></p>
+</section><nav aria-label="Mobile restaurant pages" class="mobile-pagination"><label for="mobile-page-1" title="Show restaurant page 1">1</label><label for="mobile-page-2" title="Show restaurant page 2">2</label></nav></section>
+<aside class="detail-sidebar">
 <section class="why-block">
-    <h2>Why Asian Food at Night</h2>
-
-    <p>
+<h2>Why Asian Food at Night</h2>
+<p>
         Amsterdam has a diverse Asian food scene. Many restaurants,
         snack bars and takeaways stay open after 22:00, offering
         flavours from Japan, China, Thailand, Indonesia, Korea and more.
     </p>
-
-    <section class="feature-icons">
-        <article>
-            <span aria-hidden="true">
-                <i class="fa-solid fa-bowl-food"></i>
-            </span>
-            <strong>Diverse Flavours</strong>
-            <p>Sushi, ramen, curry, noodles and more.</p>
-        </article>
-
-        <article>
-            <span aria-hidden="true">
-                <i class="fa-solid fa-moon"></i>
-            </span>
-            <strong>Open late</strong>
-            <p>Many places are open after 22:00.</p>
-        </article>
-
-        <article>
-            <span aria-hidden="true">
-                <i class="fa-solid fa-people-group"></i>
-            </span>
-            <strong>Popular area</strong>
-            <p>Find pizza in different neighbourhoods.</p>
-        </article>
-    </section>
+<section class="feature-icons">
+<article>
+<span aria-hidden="true">
+<i class="fa-solid fa-bowl-food"></i>
+</span>
+<strong>Diverse Flavours</strong>
+<p>Sushi, ramen, curry, noodles and more.</p>
+</article>
+<article>
+<span aria-hidden="true">
+<i class="fa-solid fa-moon"></i>
+</span>
+<strong>Open late</strong>
+<p>Many places are open after 22:00.</p>
+</article>
+<article>
+<span aria-hidden="true">
+<i class="fa-solid fa-people-group"></i>
+</span>
+<strong>Popular area</strong>
+<p>Find pizza in different neighbourhoods.</p>
+</article>
 </section>
-
+</section>
 <section class="cuisine-block">
-    <h2>Explore Asian Cuisine</h2>
-    <p>Discover different Asian food styles available in Amsterdam.</p>
-
-    <section class="cuisine-grid">
-        <article>
-            <i class="fa-solid fa-bowl-rice" aria-hidden="true"></i>
-            <strong>Japanese</strong>
-        </article>
-
-        <article>
-            <i class="fa-solid fa-bowl-food" aria-hidden="true"></i>
-            <strong>Chinese</strong>
-        </article>
-
-        <article>
-            <i class="fa-solid fa-utensils" aria-hidden="true"></i>
-            <strong>Thai</strong>
-        </article>
-
-        <article>
-            <i class="fa-solid fa-bowl-rice" aria-hidden="true"></i>
-            <strong>Indonesians</strong>
-        </article>
-
-        <article>
-            <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
-            <strong>Korean</strong>
-        </article>
-
-        <article>
-            <i class="fa-solid fa-bowl-food" aria-hidden="true"></i>
-            <strong>Vietnamese</strong>
-        </article>
-    </section>
+<h2>Explore Asian Cuisine</h2>
+<p>Discover different Asian food styles available in Amsterdam.</p>
+<section class="cuisine-grid">
+<article>
+<i aria-hidden="true" class="fa-solid fa-bowl-rice"></i>
+<strong>Japanese</strong>
+</article>
+<article>
+<i aria-hidden="true" class="fa-solid fa-bowl-food"></i>
+<strong>Chinese</strong>
+</article>
+<article>
+<i aria-hidden="true" class="fa-solid fa-utensils"></i>
+<strong>Thai</strong>
+</article>
+<article>
+<i aria-hidden="true" class="fa-solid fa-bowl-rice"></i>
+<strong>Indonesians</strong>
+</article>
+<article>
+<i aria-hidden="true" class="fa-solid fa-mug-hot"></i>
+<strong>Korean</strong>
+</article>
+<article>
+<i aria-hidden="true" class="fa-solid fa-bowl-food"></i>
+<strong>Vietnamese</strong>
+</article>
 </section>
-
-
-                <!-- NEIGHBOURHOODS WITH NEW ICONS -->
-                <section class="neighbourhood-block">
-
-                    <h2>Find Asian Food by Neighbourhood</h2>
-
-                    <p>Explore options in popular areas of Amsterdam</p>
-
-                    <section class="neighbourhood-grid">
-
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Centrum%20Amsterdam"
-                            target="_blank" rel="noopener noreferrer">
-                            <span><i class="fa-solid fa-building" aria-hidden="true"></i></span>
+</section>
+<!-- NEIGHBOURHOODS WITH NEW ICONS -->
+<section class="neighbourhood-block">
+<h2>Find Asian Food by Neighbourhood</h2>
+<p>Explore options in popular areas of Amsterdam</p>
+<section class="neighbourhood-grid">
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Centrum%20Amsterdam" rel="noopener noreferrer" target="_blank">
+<span><i aria-hidden="true" class="fa-solid fa-building"></i></span>
                             Centrum
                         </a>
-
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20De%20Pijp%20Amsterdam"
-                            target="_blank" rel="noopener noreferrer">
-                            <span><i class="fa-solid fa-industry" aria-hidden="true"></i></span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20De%20Pijp%20Amsterdam" rel="noopener noreferrer" target="_blank">
+<span><i aria-hidden="true" class="fa-solid fa-industry"></i></span>
                             De Pijp
                         </a>
-
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20West%20Amsterdam"
-                            target="_blank" rel="noopener noreferrer">
-                            <span><i class="fa-solid fa-wind" aria-hidden="true"></i></span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20West%20Amsterdam" rel="noopener noreferrer" target="_blank">
+<span><i aria-hidden="true" class="fa-solid fa-wind"></i></span>
                             West
                         </a>
-
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Oost%20Amsterdam"
-                            target="_blank" rel="noopener noreferrer">
-                            <span><i class="fa-solid fa-landmark" aria-hidden="true"></i></span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Oost%20Amsterdam" rel="noopener noreferrer" target="_blank">
+<span><i aria-hidden="true" class="fa-solid fa-landmark"></i></span>
                             Oost
                         </a>
-
-                        <a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Noord%20Amsterdam"
-                            target="_blank" rel="noopener noreferrer">
-                            <span><i class="fa-solid fa-church" aria-hidden="true"></i></span>
+<a href="https://www.google.com/maps/search/?api=1&amp;query=Fast%20Food%20Noord%20Amsterdam" rel="noopener noreferrer" target="_blank">
+<span><i aria-hidden="true" class="fa-solid fa-church"></i></span>
                             Noord
                         </a>
-
-                    </section>
-                </section>
-                <section class="map-block">
-                    <h3>Asian Food locations on the Map</h3>
-                    <p>See Asian food locations in Amsterdam</p><iframe title="Map of Amsterdam restaurants"
-                        loading="lazy"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=4.835%2C52.335%2C4.975%2C52.405&amp;layer=mapnik"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <p><a class="map-link" href="https://www.openstreetmap.org/#map=12/52.370/4.900" target="_blank"
-                            rel="noopener noreferrer">Open larger map ↗</a></p>
-                </section>
-            </aside>
-        </section>
-        <section class="faq-block">
-            <h2>Frequently Asked Questions</h2>
-            <details>
-                <summary>Where can I find food after 22:00 in Amsterdam?</summary>
-                <p>Explore the restaurant cards and check each location before visiting.</p>
-            </details>
-            <details>
-                <summary>How can I check restaurant opening hours?</summary>
-                <p>Use the website link or Google Maps for the latest published hours.</p>
-            </details>
-            <details>
-                <summary>How do I get directions to a restaurant?</summary>
-                <p>Select the orange Directions button beside a restaurant.</p>
-            </details>
-            <details>
-                <summary>Are all the listed restaurants open after 22:00?</summary>
-                <p>Opening hours can change, so always verify before travelling.</p>
-            </details>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <section class="footer-inner">
-            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logofooter.png" alt="Food pin logo"
-                        title="Late-Night Food" width="54" height="60"><span>Late-Night
+</section>
+</section>
+<section class="map-block">
+<h3>Asian Food locations on the Map</h3>
+<p>See Asian food locations in Amsterdam</p><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=4.835%2C52.335%2C4.975%2C52.405&amp;layer=mapnik" title="Map of Amsterdam restaurants"></iframe>
+<p><a class="map-link" href="https://www.openstreetmap.org/#map=12/52.370/4.900" rel="noopener noreferrer" target="_blank">Open larger map ↗</a></p>
+</section>
+</aside>
+</section>
+<section class="faq-block">
+<h2>Frequently Asked Questions</h2>
+<details>
+<summary>Where can I find food after 22:00 in Amsterdam?</summary>
+<p>Explore the restaurant cards and check each location before visiting.</p>
+</details>
+<details>
+<summary>How can I check restaurant opening hours?</summary>
+<p>Use the website link or Google Maps for the latest published hours.</p>
+</details>
+<details>
+<summary>How do I get directions to a restaurant?</summary>
+<p>Select the orange Directions button beside a restaurant.</p>
+</details>
+<details>
+<summary>Are all the listed restaurants open after 22:00?</summary>
+<p>Opening hours can change, so always verify before travelling.</p>
+</details>
+</section>
+</main>
+<footer class="site-footer">
+<section class="footer-inner">
+<section class="footer-about"><a class="brand" href="index.html"><img alt="Food pin logo" height="60" src="img/logofooter.png" title="Late-Night Food" width="54"/><span>Late-Night
                         Food<small>AMSTERDAM</small></span></a>
-                <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
+<p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
                     affordable meals after 22:00.</p>
-            </section>
-            <section>
-                <h2>Quick Links</h2>
-                <nav aria-label="Footer navigation">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="fastfood.html">Fast Food</a></li>
-                        <li><a href="pizza.html">Pizza</a></li>
-                        <li><a href="asianfood.html">Asian Food</a></li>
-                        <li><a href="affordable.html">Affordable Food</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </section>
-            <section>
-                <h2>Information</h2>
-                <p><a href="index.html#about">About Us</a></p>
-            </section>
-           <section>
-    <h2>Follow Us</h2>
-
-    <p class="socials">
-        <a href="https://www.instagram.com/late_night_food_in_amsterdam?xtok=aW12a2M1NmpsdDB4&amp;utm_source=qr"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-        </a>
-
-        <a href="https://www.facebook.com/share/18cjVKNwvF/?mibextid=wwXIfr"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-        </a>
-
-        <a href="https://www.youtube.com/@fueharochannel6216"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="YouTube">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-        </a>
-
-        <a href="https://www.tiktok.com/@xyatcd?_r=1&amp;_t=ZN-9Auv4hte4yk"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="TikTok">
-            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-        </a>
-    </p>
-
-    <p>
+</section>
+<section>
+<h2>Quick Links</h2>
+<nav aria-label="Footer navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="fastfood.html">Fast Food</a></li>
+<li><a href="pizza.html">Pizza</a></li>
+<li><a href="asianfood.html">Asian Food</a></li>
+<li><a href="affordable.html">Affordable Food</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</section>
+<section>
+<h2>Information</h2>
+<p><a href="index.html#about">About Us</a></p>
+</section>
+<section>
+<h2>Follow Us</h2>
+<p class="socials">
+<a aria-label="Instagram" href="https://www.instagram.com/late_night_food_in_amsterdam?xtok=aW12a2M1NmpsdDB4&amp;utm_source=qr" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-instagram"></i>
+</a>
+<a aria-label="Facebook" href="https://www.facebook.com/share/18cjVKNwvF/?mibextid=wwXIfr" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-facebook-f"></i>
+</a>
+<a aria-label="YouTube" href="https://www.youtube.com/@fueharochannel6216" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-youtube"></i>
+</a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@xyatcd?_r=1&amp;_t=ZN-9Auv4hte4yk" rel="noopener noreferrer" target="_blank">
+<i aria-hidden="true" class="fa-brands fa-tiktok"></i>
+</a>
+</p>
+<p>
         Stay connected with us for the latest late-night
         food spots, updates and recommendations in Amsterdam.
     </p>
 </section>
-
-
-        </section>
-        <section class="footer-bottom">
-            <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
-            <p>Good food, even late at night! <span class="heart">♡</span></p>
-        </section>
-    </footer>
-    <aside class="cookie-note"><input type="checkbox" id="cookie-dismiss">
-        <p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
-    </aside>
+</section>
+<section class="footer-bottom">
+<p>© 2026 Late-Night Food Amsterdam. All rights reserved.</p>
+<p>Good food, even late at night! <span class="heart">♡</span></p>
+</section>
+</footer>
+<aside class="cookie-note"><input id="cookie-dismiss" type="checkbox"/>
+<p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
+</aside>
 </body>
-
 </html>
