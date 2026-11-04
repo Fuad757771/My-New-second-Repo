@@ -423,6 +423,21 @@ textarea {
     max-width: 275px;
     margin-top: 1rem
 }
+/* Footer logo */
+.site-footer .brand img {
+    filter: none;
+}
+
+/* Footer logo text */
+.site-footer .brand span {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* AMSTERDAM text */
+.site-footer .brand small {
+    color: #ffffff;
+}
 
 .socials {
     display: flex;
@@ -652,35 +667,40 @@ textarea {
     font-size: .89rem
 }
 
+
+/* Asian Food - Why Asian Food at Night */
+
 .feature-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 28px;
     margin-bottom: 24px;
 }
 
 .feature-icons article {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    background: #ffffff;
-    padding: 12px;
-    border-radius: 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
     text-align: left;
+    min-width: 0;
 }
 
 .feature-icons article > span {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
+    width: 100%;
+    height: 72px;
     background: #ffebdf;
     color: #ff6b35;
-    border-radius: 12px;
-    font-size: 23px;
+    border-radius: 0;
+    font-size: 42px;
+    margin-bottom: 8px;
 }
 
 .feature-icons article section {
@@ -689,18 +709,19 @@ textarea {
 
 .feature-icons strong {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 700;
     color: #1f2937;
-    padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .feature-icons article p {
-    font-size: 13px;
-    color: #4b5563;
+    font-size: 12px;
+    color: #222222;
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.4;
 }
+
 
 .neighbourhood-grid {
     display: grid;
@@ -724,33 +745,84 @@ textarea {
     color: var(--orange)
 }
 
+
 .cuisine-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: .7rem
+    gap: 12px;
+    margin-top: 12px;
 }
 
-.cuisine-grid span {
-    background: #fff;
-    padding: .9rem;
-    font-weight: 700;
-    font-size: .85rem
+.cuisine-grid article {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    padding: 14px;
+    min-height: 65px;
 }
+
+.cuisine-grid article i {
+    color: #ff6b35;
+    font-size: 32px;
+    width: 42px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.cuisine-grid article strong {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111111;
+}
+
 
 .tips-panel {
     background: #ffe8dc;
-    padding: 1.4rem
+    padding: 20px;
 }
 
+/* Heading */
+.tips-panel h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Lightbulb icon */
+.tips-panel h2 i {
+    color: #ff6b35;
+    font-size: 20px;
+}
+
+/* Remove default bullet points */
+.tips-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Tips text */
 .tips-panel li {
-    font-size: .83rem;
-    padding: .32rem 0
+    position: relative;
+    font-size: 13px;
+    padding: 5px 0 5px 30px;
+    margin-bottom: 8px;
 }
 
-.tips-panel li:before {
-    content: '●';
-    color: var(--orange);
-    margin-right: .6rem
+/* Orange check-circle icons */
+.tips-panel li::before {
+    content: "\f058";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #ff6b35;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 14px;
 }
 
 .map-block iframe {
@@ -1457,4 +1529,28 @@ h1 em {
     .contact-methods {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+}
+/* Affordable Food feature cards only */
+.affordable-features.feature-icons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 28px;
+}
+
+.affordable-features.feature-icons article > span {
+    height: 80px;
+    background: #ffebdf;
+    color: #ff6b35;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.affordable-features.feature-icons strong {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.affordable-features.feature-icons article p {
+    font-size: 13px;
+    line-height: 1.5;
 }
