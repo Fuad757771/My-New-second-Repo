@@ -1,78 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Fuad Abdi Mumed">
-    <meta name="description"
-        content="Contact Late-Night Food Amsterdam with your questions, suggestions or feedback about late-night restaurant listings.">
-    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact | Late-Night Food Amsterdam</title>
-
-   <link rel="icon" type="image/svg+xml" href="design/favicon.svg">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <meta charset="utf-8" />
+    <meta content="Fuad Abdi Mumed" name="author" />
+    <meta
+        content="Contact Late-Night Food Amsterdam with your questions, suggestions or feedback about late-night restaurant listings."
+        name="description" />
+    <meta content="Amsterdam, late-night, food, restaurants, neighbourhoods" name="keywords" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Contact | Late-Night Food Amsterdam
+    </title>
+    <link href="design/favicon.svg" rel="icon" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
-        rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        type="text/css">
+        rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+    <style>
+        /* Keep accessibility headings available to screen readers without changing layout. */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="site-header">
         <section class="header-inner">
-
+            <h2 class="sr-only">
+                Website header
+            </h2>
             <a class="brand" href="index.html">
-                <img src="img/logo.png"
-                    alt="Late-Night Food Amsterdam pin logo"
-                    title="Late-Night Food Amsterdam"
-                    width="54" height="60">
-
+                <img alt="Late-Night Food Amsterdam pin logo" height="60" src="img/logo.png"
+                    title="Late-Night Food Amsterdam" width="54" />
                 <span>
                     Late-Night Food
-                    <small>AMSTERDAM</small>
+                    <small>
+                        AMSTERDAM
+                    </small>
                 </span>
             </a>
-
-            <input type="checkbox"
-                id="menu-toggle"
-                class="menu-toggle"
-                aria-label="Toggle menu">
-
-            <label for="menu-toggle" class="menu-label">☰</label>
-
-            <nav class="main-nav" aria-label="Main navigation">
+            <input aria-label="Toggle menu" class="menu-toggle" id="menu-toggle" type="checkbox" />
+            <label aria-label="Open navigation menu" class="menu-label" for="menu-toggle">
+                ☰
+            </label>
+            <nav aria-label="Main navigation" class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="fastfood.html">Fast Food</a></li>
-                    <li><a href="pizza.html">Pizza</a></li>
-                    <li><a href="asianfood.html">Asian Food</a></li>
-                    <li><a href="affordable.html">Affordable Food</a></li>
-                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fastfood.html">
+                            Fast Food
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pizza.html">
+                            Pizza
+                        </a>
+                    </li>
+                    <li>
+                        <a href="asianfood.html">
+                            Asian Food
+                        </a>
+                    </li>
+                    <li>
+                        <a href="affordable.html">
+                            Affordable Food
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-current="page" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </nav>
-
         </section>
     </header>
-
     <!-- MAIN CONTENT -->
     <main class="contact-main">
-
         <section class="contact-heading">
-            <h1>Contact <em>Us</em></h1>
-
+            <h1>
+                Contact
+                <em>
+                    Us
+                </em>
+            </h1>
             <p>
                 Have a question, suggestion, or feedback?
                 We'd love to hear from you! Get in touch and
@@ -80,280 +110,272 @@
                 in Amsterdam even easier.
             </p>
         </section>
-
         <section class="contact-columns">
-
             <!-- CONTACT FORM -->
             <section class="form-panel">
-
-                <form action="contact.html" method="post">
-
+                <h2 class="sr-only">
+                    Contact form
+                </h2>
+                <form id="contact-demo-form">
                     <fieldset>
-                        <legend>Salutation (Required)</legend>
-
+                        <legend>
+                            Salutation (Required)
+                        </legend>
                         <section class="radio-row">
+                            <h3 class="sr-only">
+                                Choose your title
+                            </h3>
                             <label>
-                                <input type="radio"
-                                    name="title"
-                                    value="Mr"
-                                    required>
+                                <input name="title" required="" type="radio" value="Mr" />
                                 Mr.
                             </label>
-
                             <label>
-                                <input type="radio"
-                                    name="title"
-                                    value="Mrs">
+                                <input name="title" type="radio" value="Mrs" />
                                 Mrs.
                             </label>
-
                             <label>
-                                <input type="radio"
-                                    name="title"
-                                    value="Other">
+                                <input name="title" type="radio" value="Other" />
                                 Other
                             </label>
                         </section>
                     </fieldset>
-
-                    <label for="fullname">Full Name (Required)</label>
-                    <input
-                        id="fullname"
-                        name="fullname"
-                        type="text"
-                        placeholder="Enter your full name"
-                        minlength="2"
-                        required>
-
-                    <label for="email">Email Address (Required)</label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Enter your email address"
-                        required>
-
-                    <label for="phone">Phone Number (Optional)</label>
-                    <input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        placeholder="+31 6 12345678">
-
-                    <label for="subject">Subject (Required)</label>
-                    <input
-                        id="subject"
-                        name="subject"
-                        type="text"
-                        placeholder="Enter your subject"
-                        required>
-
-                    <label for="message">Question / Request (Required)</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Type your question or request here..."
-                        rows="8"
-                        required></textarea>
-
-                    <input
-                        class="btn-orange submit-btn"
-                        type="submit"
-                        value="Send Message">
-
+                    <label for="fullname">
+                        Full Name (Required)
+                    </label>
+                    <input id="fullname" minlength="2" name="fullname" placeholder="Enter your full name" required=""
+                        type="text" />
+                    <label for="email">
+                        Email Address (Required)
+                    </label>
+                    <input id="email" name="email" placeholder="Enter your email address" required="" type="email" />
+                    <label for="phone">
+                        Phone Number (Optional)
+                    </label>
+                    <input id="phone" name="phone" placeholder="+31 6 12345678" type="tel" />
+                    <label for="subject">
+                        Subject (Required)
+                    </label>
+                    <input id="subject" name="subject" placeholder="Enter your subject" required="" type="text" />
+                    <label for="message">
+                        Question / Request (Required)
+                    </label>
+                    <textarea id="message" name="message" placeholder="Type your question or request here..."
+                        required="" rows="8"></textarea>
+                    <input class="btn-orange submit-btn" type="submit" value="Send Message" />
                 </form>
-
-                <p class="form-disclaimer">
-                    Demo form only — this website does not send messages.
+                <p aria-live="polite" class="form-disclaimer" id="form-status" role="status">
                 </p>
-
+                <p class="form-disclaimer">
+                    Demo form only &mdash; this website does not send messages.
+                </p>
             </section>
-
             <!-- CONTACT INFORMATION -->
             <aside class="contact-info">
-
                 <figure>
-                    <video
-                        autoplay
-                        muted
-                        loop
-                        playsinline
+                    <video autoplay="" loop="" muted="" playsinline="" preload="metadata"
                         title="Amsterdam city lights at night">
-
-                        <source
-                            src="media/amsterdam-contact.mp4"
-                            type="video/mp4">
-
+                        <source src="media/amsterdam-contact.mp4" type="video/mp4" />
                         Your browser does not support the video.
                     </video>
-
                     <figcaption class="sr-only">
                         Amsterdam city lights at night
                     </figcaption>
                 </figure>
-
-                <h2>Other Ways to <em>Reach Us</em></h2>
-
+                <h2>
+                    Other Ways to
+                    <em>
+                        Reach Us
+                    </em>
+                </h2>
                 <p>
                     Prefer a different way to get in touch?
                     You can reach us using the information below.
                 </p>
-
                 <section class="contact-methods">
-
                     <article>
-                        <span aria-hidden="true">✉</span>
-                        <h3>Email</h3>
-                        <p><strong>Contact via our form</strong></p>
+                        <span aria-hidden="true">
+                            ✉
+                        </span>
+                        <h3>
+                            Email
+                        </h3>
+                        <p>
+                            <strong>
+                                Contact via our form
+                            </strong>
+                        </p>
                     </article>
-
                     <article>
-                        <span aria-hidden="true">⌖</span>
-                        <h3>Location</h3>
-                        <p>Amsterdam, NL</p>
+                        <span aria-hidden="true">
+                            &target;
+                        </span>
+                        <h3>
+                            Location
+                        </h3>
+                        <p>
+                            Amsterdam, NL
+                        </p>
                     </article>
-
                     <article>
-                        <span aria-hidden="true">◷</span>
-                        <h3>Response Time</h3>
-                        <p>As soon as possible</p>
+                        <span aria-hidden="true">
+                            ◷
+                        </span>
+                        <h3>
+                            Response Time
+                        </h3>
+                        <p>
+                            As soon as possible
+                        </p>
                     </article>
-
                 </section>
-
-                <h2>Follow us</h2>
-
+                <h2>
+                    Follow us
+                </h2>
                 <p>
                     Stay connected for new food spots,
                     updates and recommendations in Amsterdam.
                 </p>
-
             </aside>
-
         </section>
-
     </main>
-
     <!-- FOOTER -->
     <footer class="site-footer">
-
         <section class="footer-inner">
-
             <section class="footer-about">
-
+                <h2 class="sr-only">
+                    About this website
+                </h2>
                 <a class="brand" href="index.html">
-                    <img src="img/logofooter.png"
-                        alt="Food pin logo"
-                        title="Late-Night Food"
-                        width="54" height="60">
-
+                    <img alt="Food pin logo" height="60" src="img/logofooter.png" title="Late-Night Food" width="54" />
                     <span>
                         Late-Night Food
-                        <small>AMSTERDAM</small>
+                        <small>
+                            AMSTERDAM
+                        </small>
                     </span>
                 </a>
-
                 <p>
                     Discover the best late-night food in Amsterdam.
                     Find restaurants and takeaways serving delicious
                     and affordable meals after 22:00.
                 </p>
-
             </section>
-
             <section>
-                <h2>Quick Links</h2>
-
+                <h2>
+                    Quick Links
+                </h2>
                 <nav aria-label="Footer navigation">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="fastfood.html">Fast Food</a></li>
-                        <li><a href="pizza.html">Pizza</a></li>
-                        <li><a href="asianfood.html">Asian Food</a></li>
-                        <li><a href="affordable.html">Affordable Food</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="fastfood.html">
+                                Fast Food
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pizza.html">
+                                Pizza
+                            </a>
+                        </li>
+                        <li>
+                            <a href="asianfood.html">
+                                Asian Food
+                            </a>
+                        </li>
+                        <li>
+                            <a href="affordable.html">
+                                Affordable Food
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </section>
-
             <section>
-                <h2>Information</h2>
-
+                <h2>
+                    Information
+                </h2>
                 <p>
-                    <a href="index.html#about">About Us</a>
+                    <a href="index.html#about">
+                        About Us
+                    </a>
                 </p>
             </section>
-
             <section>
-                <h2>Follow Us</h2>
-
+                <h2>
+                    Follow Us
+                </h2>
                 <p class="socials">
-
-                    <a
+                    <a aria-label="Instagram"
                         href="https://www.instagram.com/late_night_food_in_amsterdam?xtok=aW12a2M1NmpsdDB4&amp;utm_source=qr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Instagram">
-                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        rel="noopener noreferrer" target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-instagram">
+                        </i>
                     </a>
-
-                    <a
-                        href="https://www.facebook.com/share/18cjVKNwvF/?mibextid=wwXIfr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <a aria-label="Facebook" href="https://www.facebook.com/share/18cjVKNwvF/?mibextid=wwXIfr"
+                        rel="noopener noreferrer" target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-facebook-f">
+                        </i>
                     </a>
-
-                    <a
-                        href="https://www.youtube.com/@fueharochannel6216"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="YouTube">
-                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    <a aria-label="YouTube" href="https://www.youtube.com/@fueharochannel6216" rel="noopener noreferrer"
+                        target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-youtube">
+                        </i>
                     </a>
-
-                    <a
-                        href="https://www.tiktok.com/@xyatcd?_r=1&amp;_t=ZN-9Auv4hte4yk"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="TikTok">
-                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    <a aria-label="TikTok" href="https://www.tiktok.com/@xyatcd?_r=1&amp;_t=ZN-9Auv4hte4yk"
+                        rel="noopener noreferrer" target="_blank">
+                        <i aria-hidden="true" class="fa-brands fa-tiktok">
+                        </i>
                     </a>
-
                 </p>
-
                 <p>
                     Stay connected with us for the latest late-night
                     food spots, updates and recommendations in Amsterdam.
                 </p>
-
             </section>
-
         </section>
-
         <section class="footer-bottom">
+            <h2 class="sr-only">
+                Copyright and website information
+            </h2>
             <p>
                 &copy; 2026 Late-Night Food Amsterdam.
                 All rights reserved.
             </p>
-
             <p>
                 Good food, even late at night!
-                <span class="heart">♡</span>
+                <span class="heart">
+                    ♡
+                </span>
             </p>
         </section>
-
     </footer>
-
     <!-- COOKIE NOTE -->
-    <aside class="cookie-note">
-        <input type="checkbox" id="cookie-dismiss">
-
-        <p>This site does not use tracking cookies.</p>
-
-        <label for="cookie-dismiss">Close ×</label>
+    <aside aria-label="Cookie information" class="cookie-note">
+        <input id="cookie-dismiss" type="checkbox" />
+        <p>
+            This site does not use tracking cookies.
+        </p>
+        <label for="cookie-dismiss">
+            Close &times;
+        </label>
     </aside>
-
+    <script>
+        // This is a demonstration form; do not submit to a server.
+        document.getElementById('contact-demo-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('form-status').textContent =
+                'Demo form only. Your message has not been sent.';
+        });
+    </script>
 </body>
+
 </html>

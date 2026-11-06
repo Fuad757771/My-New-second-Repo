@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,14 +6,13 @@
     <meta name="author" content="Fuad Abdi Mumed">
     <meta name="description"
         content="Find great food after 22:00 in Amsterdam. Discover fast food, pizza, Asian food and affordable restaurants by neighbourhood.">
-    <meta name="keywords"
-        content="Amsterdam, late-night, food, restaurants, neighbourhoods">
+    <meta name="keywords" content="Amsterdam, late-night, food, restaurants, neighbourhoods">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Home | Late-Night Food Amsterdam</title>
 
     <!-- Website favicon -->
-  <link rel="icon" type="image/svg+xml" href="design/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="design/favicon.svg">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +23,7 @@
         rel="stylesheet" type="text/css">
 
     <!-- Font Awesome social media icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -36,14 +33,12 @@
 
     <header class="site-header">
         <section class="header-inner">
+            <h2 class="sr-only">Website header</h2>
 
             <!-- Logo -->
             <a class="brand" href="index.html">
-                <img src="img/logo.png"
-                    alt="Late-Night Food Amsterdam pin logo"
-                    title="Late-Night Food Amsterdam"
-                    width="54"
-                    height="60">
+                <img src="img/logo.png" alt="Late-Night Food Amsterdam pin logo" title="Late-Night Food Amsterdam"
+                    width="54" height="60">
 
                 <span>
                     Late-Night Food
@@ -52,12 +47,9 @@
             </a>
 
             <!-- Mobile menu -->
-            <input type="checkbox"
-                id="menu-toggle"
-                class="menu-toggle"
-                aria-label="Toggle menu">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
 
-            <label for="menu-toggle" class="menu-label">☰</label>
+            <label for="menu-toggle" class="menu-label" aria-label="Open navigation menu">☰</label>
 
             <!-- Navigation -->
             <nav class="main-nav" aria-label="Main navigation">
@@ -88,28 +80,30 @@
 
 
     <main>
-   
-<section class="home-hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-        <source src="media/amsterdam-night.mp4" type="video/mp4">
-    </video>
 
-    <section class="hero-content">
-        <h1>Find Great Food <em>After 22:00</em> in Amsterdam</h1>
-        <p>Discover restaurants and takeaway options for night-shift workers, students and night owls.</p>
+        <section class="home-hero">
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata"
+                aria-label="Amsterdam at night">
+                <source src="media/amsterdam-night.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
 
-        <form class="hero-search" action="index.html" method="get" role="search">
-            <label class="sr-only" for="food-search">Search food or location</label>
-            <input id="food-search" name="search" type="search"
-                   placeholder="Search food or location...">
-            <button type="submit" aria-label="Search food">⌕</button>
-        </form>
-    </section>
+            <section class="hero-content">
+                <h1>Find Great Food <em>After 22:00</em> in Amsterdam</h1>
+                <p>Discover restaurants and takeaway options for night-shift workers, students and night owls.</p>
+
+                <form class="hero-search" action="index.html" method="get" role="search">
+                    <label class="sr-only" for="food-search">Search food or location</label>
+                    <input id="food-search" name="search" type="search" placeholder="Search food or location...">
+                    <button type="submit" aria-label="Search food">⌕</button>
+                </form>
+            </section>
 
         </section>
         <section class="home-section" id="categories">
             <h2>What would you like to eat?</h2>
-            <section class="category-row" aria-label="Food categories"><a class="category" href="fastfood.html">
+            <section class="category-row" aria-label="Food categories">
+                <h2 class="sr-only">Browse food categories</h2><a class="category" href="fastfood.html">
                     <figure><img src="img/cat-fast.png" alt="Fast Food" title="Fast Food" loading="lazy">
                         <figcaption>Fast Food</figcaption>
                     </figure>
@@ -122,18 +116,21 @@
                         <figcaption>Asian Food</figcaption>
                     </figure>
                 </a><a class="category" href="affordable.html">
-                    <figure><img src="img/cat-affordable.jpg" alt="Affordable Food" title="Affordable Food" loading="lazy">
+                    <figure><img src="img/cat-affordable.jpg" alt="Affordable Food" title="Affordable Food"
+                            loading="lazy">
                         <figcaption>Affordable food</figcaption>
                     </figure>
                 </a><a class="category" href="#popular">
                     <figure><img src="img/cat-all.png" alt="All Categories" title="All Categories" loading="lazy">
                         <figcaption>All Categories</figcaption>
                     </figure>
-                </a></section>
+                </a>
+            </section>
         </section>
         <section class="home-section" id="popular">
             <h2>Popular Late-Night Spots</h2>
             <section class="popular-grid">
+                <h2 class="sr-only">Featured restaurants</h2>
                 <article class="popular-card"><a href="fastfood.html">
                         <figure><img src="img/spot-burger.jpg" alt="Mr Burger food" title="Mr Burger" loading="lazy">
                             <figcaption><strong>Mr Burger</strong><small>Centrum, Amsterdam</small><small>Open late —
@@ -162,26 +159,36 @@
         </section>
         <section class="home-section areas-section">
             <h2>Explore Amsterdam by neighbourhood</h2>
-            <section class="areas-row"><a class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
-    <source src="media/amsterdam-center.mp4" type="video/mp4">
-</video><strong>Centraal</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
-    <source src="media/amsterdam-depijp.mp4" type="video/mp4">
-</video><strong>De Pijp</strong></a><a class="area-card"
-                    href="fastfood.html"><video autoplay muted loop playsinline>
-    <source src="media/amsterdam-west.mp4" type="video/mp4">
-</video><strong>West</strong></a><a
-                    class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
-    <source src="media/amsterdam-oost.mp4" type="video/mp4">
-</video><strong>Oost</strong></a><a
-                    class="area-card" href="fastfood.html"><video autoplay muted loop playsinline>
-    <source src="media/amsterdam-noord.mp4" type="video/mp4">
-</video>
-<strong>Noord</strong></a></section>
+            <section class="areas-row">
+                <h2 class="sr-only">Amsterdam neighbourhood links</h2><a class="area-card" href="fastfood.html"><video
+                        autoplay muted loop playsinline preload="metadata">
+                        <source src="media/amsterdam-center.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video><strong>Centraal</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted
+                        loop playsinline preload="metadata">
+                        <source src="media/amsterdam-depijp.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video><strong>De Pijp</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted
+                        loop playsinline preload="metadata">
+                        <source src="media/amsterdam-west.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video><strong>West</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted
+                        loop playsinline preload="metadata">
+                        <source src="media/amsterdam-oost.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video><strong>Oost</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted
+                        loop playsinline preload="metadata">
+                        <source src="media/amsterdam-noord.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <strong>Noord</strong></a>
+            </section>
         </section>
         <section class="home-section about-home" id="about">
             <h2>About Us</h2>
             <section class="about-row">
-                <figure><img src="img/chef.jpg" alt="Chef preparing a meal" title="Chef preparing a meal" 
+                <h2 class="sr-only">About Late-Night Food Amsterdam</h2>
+                <figure><img src="img/chef.jpg" alt="Chef preparing a meal" title="Chef preparing a meal"
                         loading="lazy"></figure>
                 <article>
                     <p>Amsterdam is a city that never truly sleeps. Even after 22:00, people are still working,
@@ -200,8 +207,10 @@
     </main>
     <footer class="site-footer">
         <section class="footer-inner">
-            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logofooter.png" alt="Food pin logo"
-                        title="Late-Night Food" width="54" height="60"><span>Late-Night
+            <section class="footer-about">
+                <h2 class="sr-only">About this website</h2><a class="brand" href="index.html"><img
+                        src="img/logofooter.png" alt="Food pin logo" title="Late-Night Food" width="54"
+                        height="60"><span>Late-Night
                         Food<small>AMSTERDAM</small></span></a>
                 <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
                     affordable meals after 22:00.</p>
@@ -224,47 +233,44 @@
                 <p><a href="index.html#about">About Us</a></p>
             </section>
             <section>
-    <h2>Follow Us</h2>
+                <h2>Follow Us</h2>
 
-    <p class="socials">
-        <a href="https://www.instagram.com/late_night_food_in_amsterdam?xtok=aW12a2M1NmpsdDB4&amp;utm_source=qr"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-        </a>
+                <p class="socials">
+                    <a href="https://www.instagram.com/late_night_food_in_amsterdam?xtok=aW12a2M1NmpsdDB4&amp;utm_source=qr"
+                        target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
 
-        <a href="https://www.facebook.com/share/18cjVKNwvF/?mibextid=wwXIfr"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-        </a>
+                    <a href="https://www.facebook.com/share/18cjVKNwvF/?mibextid=wwXIfr" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    </a>
 
-        <a href="https://www.youtube.com/@fueharochannel6216"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="YouTube">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-        </a>
+                    <a href="https://www.youtube.com/@fueharochannel6216" target="_blank" rel="noopener noreferrer"
+                        aria-label="YouTube">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                    </a>
 
-        <a href="https://www.tiktok.com/@xyatcd?_r=1&amp;_t=ZN-9Auv4hte4yk"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="TikTok">
-            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-        </a>
-    </p>
+                    <a href="https://www.tiktok.com/@xyatcd?_r=1&amp;_t=ZN-9Auv4hte4yk" target="_blank"
+                        rel="noopener noreferrer" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                    </a>
+                </p>
 
-    <p>
-        Stay connected with us for the latest late-night
-        food spots, updates and recommendations in Amsterdam.
-    </p>
-</section>
+                <p>
+                    Stay connected with us for the latest late-night
+                    food spots, updates and recommendations in Amsterdam.
+                </p>
+            </section>
 
         </section>
         <section class="footer-bottom">
+            <h2 class="sr-only">Copyright and website information</h2>
             <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
             <p>Good food, even late at night! <span class="heart">♡</span></p>
         </section>
     </footer>
-    <aside class="cookie-note"><input type="checkbox" id="cookie-dismiss">
+    <aside class="cookie-note" aria-label="Cookie information"><input type="checkbox" id="cookie-dismiss">
         <p>This site does not use tracking cookies.</p><label for="cookie-dismiss">Close ×</label>
     </aside>
 </body>
