@@ -2425,3 +2425,13 @@ textarea {
         max-width: 100%;
     }
 }
+#form-status {
+    display: none;
+}
+
+#form-status:target {
+    display: block;
+    color: #176b38;
+    font-weight: 700;
+    margin-top: 1rem;
+}

@@ -19,22 +19,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;family=Roboto:wght@400;500;700&amp;display=swap"
         rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"
         type="text/css" />
-    <style>
-        /* Keep accessibility headings available to screen readers without changing layout. */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
+ 
 </head>
 
 <body>
@@ -116,7 +104,7 @@
                 <h2 class="sr-only">
                     Contact form
                 </h2>
-                <form id="contact-demo-form">
+              <form id="contact-demo-form" action="contact.html#form-status" method="get">
                     <fieldset>
                         <legend>
                             Salutation (Required)
@@ -163,7 +151,9 @@
                         required="" rows="8"></textarea>
                     <input class="btn-orange submit-btn" type="submit" value="Send Message" />
                 </form>
-                <p aria-live="polite" class="form-disclaimer" id="form-status" role="status">
+                <p id="form-status" class="form-disclaimer" role="status">
+                    Thank you! Your form has been submitted for this demonstration.
+                    No message was actually sent.
                 </p>
                 <p class="form-disclaimer">
                     Demo form only &mdash; this website does not send messages.
@@ -368,14 +358,7 @@
             Close &times;
         </label>
     </aside>
-    <script>
-        // This is a demonstration form; do not submit to a server.
-        document.getElementById('contact-demo-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            document.getElementById('form-status').textContent =
-                'Demo form only. Your message has not been sent.';
-        });
-    </script>
+
 </body>
 
 </html>
