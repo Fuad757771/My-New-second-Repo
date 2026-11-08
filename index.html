@@ -11,10 +11,10 @@
 
     <title>Home | Late-Night Food Amsterdam</title>
 
-    <!-- Website favicon -->
+  
     <link rel="icon" type="image/svg+xml" href="design/favicon.svg">
 
-    <!-- Google Fonts -->
+  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -30,10 +30,9 @@
 </head>
 
 <body>
-
+ 
     <header class="site-header">
-        <section class="header-inner">
-            <h2 class="sr-only">Website header</h2>
+        <section class="header-inner">  <!-- gives the section a name that CSS can select-->
 
             <!-- Logo -->
             <a class="brand" href="index.html">
@@ -79,13 +78,13 @@
     </header>
 
 
-    <main>
+    <main> 
 
         <section class="home-hero">
             <video class="hero-video" autoplay muted loop playsinline preload="metadata"
                 aria-label="Amsterdam at night">
                 <source src="media/amsterdam-night.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
+               
             </video>
 
             <section class="hero-content">
@@ -102,8 +101,7 @@
         </section>
         <section class="home-section" id="categories">
             <h2>What would you like to eat?</h2>
-            <section class="category-row" aria-label="Food categories">
-                <h2 class="sr-only">Browse food categories</h2><a class="category" href="fastfood.html">
+            <section class="category-row" aria-label="Food categories"><a class="category" href="fastfood.html">
                     <figure><img src="img/cat-fast.png" alt="Fast Food" title="Fast Food" loading="lazy">
                         <figcaption>Fast Food</figcaption>
                     </figure>
@@ -124,13 +122,11 @@
                     <figure><img src="img/cat-all.png" alt="All Categories" title="All Categories" loading="lazy">
                         <figcaption>All Categories</figcaption>
                     </figure>
-                </a>
-            </section>
+                </a></section>
         </section>
         <section class="home-section" id="popular">
             <h2>Popular Late-Night Spots</h2>
             <section class="popular-grid">
-                <h2 class="sr-only">Featured restaurants</h2>
                 <article class="popular-card"><a href="fastfood.html">
                         <figure><img src="img/spot-burger.jpg" alt="Mr Burger food" title="Mr Burger" loading="lazy">
                             <figcaption><strong>Mr Burger</strong><small>Centrum, Amsterdam</small><small>Open late —
@@ -159,9 +155,8 @@
         </section>
         <section class="home-section areas-section">
             <h2>Explore Amsterdam by neighbourhood</h2>
-            <section class="areas-row">
-                <h2 class="sr-only">Amsterdam neighbourhood links</h2><a class="area-card" href="fastfood.html"><video
-                        autoplay muted loop playsinline preload="metadata">
+            <section class="areas-row"><a class="area-card" href="fastfood.html"><video autoplay muted loop playsinline
+                        preload="metadata">
                         <source src="media/amsterdam-center.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video><strong>Centraal</strong></a><a class="area-card" href="fastfood.html"><video autoplay muted
@@ -181,13 +176,11 @@
                         <source src="media/amsterdam-noord.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
-                    <strong>Noord</strong></a>
-            </section>
+                    <strong>Noord</strong></a></section>
         </section>
         <section class="home-section about-home" id="about">
             <h2>About Us</h2>
             <section class="about-row">
-                <h2 class="sr-only">About Late-Night Food Amsterdam</h2>
                 <figure><img src="img/chef.jpg" alt="Chef preparing a meal" title="Chef preparing a meal"
                         loading="lazy"></figure>
                 <article>
@@ -207,10 +200,8 @@
     </main>
     <footer class="site-footer">
         <section class="footer-inner">
-            <section class="footer-about">
-                <h2 class="sr-only">About this website</h2><a class="brand" href="index.html"><img
-                        src="img/logofooter.png" alt="Food pin logo" title="Late-Night Food" width="54"
-                        height="60"><span>Late-Night
+            <section class="footer-about"><a class="brand" href="index.html"><img src="img/logofooter.png"
+                        alt="Food pin logo" title="Late-Night Food" width="54" height="60"><span>Late-Night
                         Food<small>AMSTERDAM</small></span></a>
                 <p>Discover the best late-night food in Amsterdam. Find restaurants and takeaways serving delicious and
                     affordable meals after 22:00.</p>
@@ -265,7 +256,6 @@
 
         </section>
         <section class="footer-bottom">
-            <h2 class="sr-only">Copyright and website information</h2>
             <p>&copy; 2026 Late-Night Food Amsterdam. All rights reserved.</p>
             <p>Good food, even late at night! <span class="heart">♡</span></p>
         </section>
